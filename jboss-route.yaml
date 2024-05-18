@@ -1,0 +1,18 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: jboss-route
+  namespace: jboss
+  labels:
+    app: jboss
+    app.kubernetes.io/instance: jboss-app
+spec:
+  to:
+    kind: Service
+    name: jboss
+  tls: null
+  host: www.jboss.lab.net
+  path: /
+  port:
+    targetPort: 8080
+
