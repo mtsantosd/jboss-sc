@@ -20,7 +20,7 @@ spec:
         app: jboss
     spec:
       containers:
-      - image: registry.redhat.io/jboss-eap-8/eap8-openjdk17-runtime-openshift-rhel8
+      - image: registry.redhat.io/jboss-eap-7/eap74-openjdk8-openshift-rhel8
         name: jboss
         resources: {}
 ---
