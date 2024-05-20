@@ -8,7 +8,7 @@ metadata:
   namespace: jboss
 spec:
   revisionHistoryLimit: 0
-  replicas: 0
+  replicas: 1
   selector:
     matchLabels:
       app: jboss
